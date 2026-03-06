@@ -18,3 +18,9 @@ body{
     border-radius: 10px;
     gap: 20px;
 }
+
+h1{
+    font-weight: bold;
+    font-family: italic;
+    font-size: 35px;
+}
