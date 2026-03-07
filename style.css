@@ -33,3 +33,17 @@ input{
     margin: 10px;
     padding-left: 10px;
 }
+
+button{
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #55eb93;
+    border-style: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
