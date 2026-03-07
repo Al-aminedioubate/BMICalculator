@@ -29,5 +29,7 @@ label{
 }
 
 input{
-    height: 50px;
+    height: 40px;
+    margin: 10px;
+    padding-left: 10px;
 }
