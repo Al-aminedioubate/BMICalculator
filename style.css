@@ -24,3 +24,7 @@ h1{
     font-family: italic;
     font-size: 35px;
 }
+
+label{
+    font-size: 20px;
+}
