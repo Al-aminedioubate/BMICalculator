@@ -39,6 +39,7 @@ input{
     margin: 10px;
     padding-left: 10px;
     color: gray;
+    outline-color: #55eb93;
 }
 
 button{
