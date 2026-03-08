@@ -28,6 +28,10 @@ label{
     font-size: 20px;
 }
 
+#weightCondition-label{
+    padding-top: 40px;
+}
+
 input{
     height: 40px;
     margin: 10px;
