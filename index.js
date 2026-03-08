@@ -9,6 +9,7 @@ let condition = document.getElementById("weightCondition-label");
 
 //function permettant de faire le calcul du BMI(IMC)
 function calculBMI(height, weight) {
+	if (inputHeight == "" || inputWeight == "") return;
 
 	let bmi = height / (weight * weight);
 
