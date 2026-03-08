@@ -8,7 +8,8 @@ let showResult = document.getElementById("result");
 let condition = document.getElementById("weightCondition-label");
 
 //function permettant de faire le calcul du BMI(IMC)
-function calcuBMI(height, weight) {
+function calculBMI(height, weight) {
+
 	let bmi = height / (weight * weight);
 
 	if (bmi < 18.5) {
@@ -37,3 +38,8 @@ function calcuBMI(height, weight) {
 
 	return bmi;
 }
+
+//evenement declenchant notre calcul
+btn.addEventListener("click", () => {
+	calculBMI(inputHeight, inputWeight);
+});
