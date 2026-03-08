@@ -36,8 +36,7 @@ input{
     height: 40px;
     margin: 10px;
     padding-left: 10px;
-    background: rgb(167, 246, 200);
-    border-style: none;
+    color: gray;
 }
 
 button{
