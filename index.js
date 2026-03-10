@@ -9,7 +9,7 @@ let condition = document.getElementById("weightCondition-label");
 
 //evenement declenchant notre calcul
 btn.addEventListener("click", () => {
-	let calcul = Number(calculBMI(inputHeight, inputWeight));
+	let calcul = Number(calculBMI(inputHeight.value, inputWeight.value));
 	console.log("BMI est " + calcul);
 });
 
@@ -43,6 +43,5 @@ function calculBMI(height, weight) {
 		console.log("you're in Severe obesity (Class 3)");
 	}
 
-	console.log("BMI " + bmi);
 	return bmi;
 }
