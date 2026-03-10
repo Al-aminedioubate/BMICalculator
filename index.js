@@ -24,11 +24,11 @@ function calculBMI(height, weight) {
 	}
 
 	if (bmi > 25 && bmi <= 29.9) {
-		console.log("you're overweight");
+		condition.textContent = "Weight Condition : Over weight";
 	}
 
 	if (bmi > 30 && bmi <= 34.9) {
-		console.log("you're in obesity (Class 1)");
+		condition.textContent = "Weight Condition : Obesity (Class 1)";
 	}
 
 	if (bmi > 35 && bmi <= 39.9) {
