@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
 
 //function permettant de faire le calcul du BMI(IMC)
 function calculBMI(height, weight) {
-	//if (inputHeight == "" || inputWeight == "") return;
+	if (inputHeight.value == "" || inputWeight.value == "") return;
 
 	let bmi = height / (weight * weight);
 
