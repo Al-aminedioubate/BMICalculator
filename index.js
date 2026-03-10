@@ -7,17 +7,11 @@ let btn = document.getElementById("btnBMI");
 let showResult = document.getElementById("result");
 let condition = document.getElementById("weightCondition-label");
 
-//evenement declenchant notre calcul
-btn.addEventListener("click", () => {
-	let calcul = Number(calculBMI(inputHeight.value, inputWeight.value));
-	console.log("BMI est " + calcul);
-});
-
 //function permettant de faire le calcul du BMI(IMC)
 function calculBMI(height, weight) {
 	if (inputHeight.value == "" || inputWeight.value == "") return;
 
-	let bmi = height / (weight * weight);
+	let bmi = weight / (height * height);
 
 	if (bmi < 18.5) {
 		console.log("you're underweight");
@@ -43,5 +37,11 @@ function calculBMI(height, weight) {
 		console.log("you're in Severe obesity (Class 3)");
 	}
 
-	return bmi;
+	return bmi.toFixed(3);
 }
+
+//evenement declenchant notre calcul
+btn.addEventListener("click", () => {
+	let calcul = Number(calculBMI(inputHeight.value, inputWeight.value));
+	console.log("BMI est " + calcul);
+});
