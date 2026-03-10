@@ -44,7 +44,6 @@ function calculBMI(height, weight) {
 
 //evenement declenchant notre calcul
 btn.addEventListener("click", () => {
-	let calcul = Number(calculBMI(inputHeight.value, inputWeight.value));
-	showResult.value = calcul;
-	console.log("BMI est " + calcul);
+	let BMICalcalul = Number(calculBMI(inputHeight.value, inputWeight.value));
+	showResult.value = BMICalcalul;
 });
