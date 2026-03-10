@@ -43,5 +43,6 @@ function calculBMI(height, weight) {
 		console.log("you're in Severe obesity (Class 3)");
 	}
 
+	console.log("BMI " + bmi);
 	return bmi;
 }
