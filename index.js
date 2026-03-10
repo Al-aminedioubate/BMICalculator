@@ -7,6 +7,12 @@ let btn = document.getElementById("btnBMI");
 let showResult = document.getElementById("result");
 let condition = document.getElementById("weightCondition-label");
 
+//evenement declenchant notre calcul
+btn.addEventListener("click", () => {
+	let calcul = Number(calculBMI(inputHeight, inputWeight));
+	console.log("BMI est " + calcul);
+});
+
 //function permettant de faire le calcul du BMI(IMC)
 function calculBMI(height, weight) {
 	//if (inputHeight == "" || inputWeight == "") return;
@@ -39,12 +45,3 @@ function calculBMI(height, weight) {
 
 	return bmi;
 }
-
-//evenement declenchant notre calcul
-btn.addEventListener("click", () => {
-	let calcul = Number(calculBMI(inputHeight, inputWeight));
-	console.log("BMI est " + calcul);
-});
-
-console.log("inputHeight" + inputHeight);
-console.log("inputWeight" + inputWeight);
