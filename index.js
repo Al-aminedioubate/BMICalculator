@@ -32,11 +32,11 @@ function calculBMI(height, weight) {
 	}
 
 	if (bmi > 35 && bmi <= 39.9) {
-		console.log("you're in obesity (Class 2)");
+		condition.textContent = "Weight Condition : Obesity (Class 2)";
 	}
 
 	if (bmi > 40) {
-		console.log("you're in Severe obesity (Class 3)");
+		condition.textContent = "Weight Condition : Severe obesity (Class 3)";
 	}
 
 	return bmi.toFixed(3);
