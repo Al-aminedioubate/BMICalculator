@@ -9,11 +9,11 @@ let condition = document.getElementById("weightCondition-label");
 
 //function permettant de faire le calcul du BMI(IMC)
 function calculBMI(height, weight) {
-	if (height.value == null || weight.value == null) return;
+	if (!height.value || !weight.value) return;
 
-	height = height / 100;
+	height = Number(height / 100);
 
-	let bmi = weight / (height * height);
+	let bmi = Number(weight / (height * height));
 
 	if (bmi < 18.5) {
 		condition.textContent = "Weight Condition : Under weight";
@@ -45,5 +45,5 @@ function calculBMI(height, weight) {
 //evenement declenchant notre calcul
 btn.addEventListener("click", () => {
 	let BMICalcalul = Number(calculBMI(inputHeight.value, inputWeight.value));
-	showResult.value = BMICalcalul;
+	showResult.value = Numer(BMICalcalul);
 });
